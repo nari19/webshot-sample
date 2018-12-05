@@ -3,21 +3,12 @@
 // node webshot.js
 const webshot = require('webshot');
 
-var jikan= new Date();
-const year = jikan.getFullYear();
-const month = jikan.getMonth()+1;
-const week = jikan.getDay();
-const day = jikan.getDate();
-const hour = jikan.getHours();
-const minute = jikan.getMinutes();
-const second = jikan.getSeconds();
+const link = 'https://af.nari19.me/few_lines/FewLines2.svg?a=This%20moist%20Lemon%20Cake%20Recipe%20is%20fluffy,&b=tangy%20and%20so%20easy%20to%20make%20from%20scratch!&c=Every%20bite%20of%20this%20supremely%20moist%20pound&d=cake%20is%20bursting%20with%20fresh%20lemon%20flavor&e=and%20the%20easy%20lemon%20glaze%20on%20top%20will%20have&f=you%20hooked%20after%20just%20one%20bite.';
 
-const link = 'https://af.nari19.me/border_stem/BorderStem3.svg';
-
-const name1 = 'borders_stem3.png';
-const path1 = '../' + name1;
-webshot(link,path1, function(err) {});
-
-// const name2 = 'illust_suit.svg';
-// const path2 = '../' + name2;
-// webshot(link,path2, function(err) {});
+const name = 'optionacvd';
+const path = '../' + name + '.png';
+const options = {
+  timeOut: 8000,
+  renderDelay: 0
+};
+webshot(link,path,options, function(err) {});
