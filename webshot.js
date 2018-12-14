@@ -1,6 +1,5 @@
 // webshot.js   
-// https://www.actzero.jp/developer/report-20203.html      
-// http://blog.honjala.net/entry/blog/2015/05/05/post-539/
+// https://github.com/okfn/webshot
 // http-server -o
 // node webshot.js
 const webshot = require('webshot');
